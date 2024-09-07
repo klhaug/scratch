@@ -8,10 +8,21 @@
 </head>
 <body>
     <h1 style="text-align: center; font-family: monospace;">scratch</h1>
-    <div class="button-container">
-        <button id="button">button</button>
+    <div class="buttons-wrapper">
+        <div class="button-container">
+            <button id="button">button that doesnt work</button>
+        </div> <br>
+        <dialog id="d">
+            <form method="dialog">
+                <p>Yo, look what i've made</p>
+                <button>Close</button>
+            </form>
+        </dialog>
+        <div class="button-container">
+            <button onclick="d.showModal()">Button that works!</button>
+        </div>
+        
     </div>
-    
     
     
     
