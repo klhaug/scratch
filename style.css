@@ -1,7 +1,15 @@
 body {
-    padding-top: 100px;
+    margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+section {
+    margin: 0 90px;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 button {
@@ -41,4 +49,18 @@ dialog {
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.364);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin: 0 24px;
+}
+
+li:hover {
+    cursor: pointer;
 }
