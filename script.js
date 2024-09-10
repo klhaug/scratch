@@ -67,7 +67,7 @@ async function fetchUsers() {
 
 const getData = async function() {
     try {
-        const [ users, posts, albums ] = await  Promise.all(urls.map(url => {
+        const [ users, posts, albums ] =  Promise.all(urls.map(url => {
             return fetch(url).then(resp=> resp.json())
         }))
             console.log("users", users),
@@ -77,3 +77,5 @@ const getData = async function() {
         console.log("oopsidoopsi")
     }
 }
+
+
